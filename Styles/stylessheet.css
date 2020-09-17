@@ -10,7 +10,7 @@ iframe {
 li {
   list-style: none;
 }
-.navbar > ul{ 
+.navbar > ul{
   display: flex;
   height: 3.2em;
   justify-content: space-around;
