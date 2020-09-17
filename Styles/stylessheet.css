@@ -1,5 +1,13 @@
 * {
+  padding: 0;
   margin: 0;
+}
+body {
+  background-color: #f1f1f1;
+}
+:root {
+  --bluecolor: #167ac6;
+  --grayColorOne:#b6b6b6;
 }
 img {
   width: 100%;
@@ -10,15 +18,15 @@ iframe {
 li {
   list-style: none;
 }
-.firtsHeader {
+.navbar {
   position: sticky;
   top: 0;
 }
 .navbar > ul {
   display: flex;
   height: 3.2em;
-  justify-content: space-between;
-  background-color: blueviolet;
+  justify-content: space-around;
+  background-color: white;
   align-items: center;
 }
 
@@ -26,11 +34,6 @@ button {
   height: 2em;
   width: 2em;
   padding: 1.5em;
-}
-
-button:active {
-  border: transparent;
-  background-color: #52525231;
 }
 
 .Hamburger {
@@ -44,22 +47,29 @@ button:active {
 }
 
 .logotop {
-  width: 5.5em;
-  height: 1.3em;
+  margin-left: 0.3em;
+  width: 7.5em;
+  height: auto;
 }
 
 .searchline {
   display: flex;
+}
+.searchbar {
+  border: 0.1em solid var(--grayColorOne);
+  width: 30em;
+  height: 1.5em;
+  padding: 0.3em;
 }
 .submitbutton {
   background-image: url("/assets/image/searchLogo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1.2em;
-  background-color: transparent;
-  border: 0.05em solid gray;
-  width: 4em;
-  height: 1.7em;
+  background-color: #f7f7f7;
+  border: 0.05em solid var(--grayColorOne);
+  width: 4.8em;
+  height: 2.25em;
   margin-left: 0;
   padding: 0.5em 2em;
 }
@@ -67,4 +77,36 @@ button:active {
 .leftcornercontiner {
   display: flex;
   align-items: center;
+}
+
+.UploadAndSignContainer {
+  display: flex;
+  align-items: center;
+}
+.UploadAndSignContainer > button + button {
+  margin-left: 4em;
+
+}
+.SignIn {
+  font-weight: bold;
+  background-color: var(--bluecolor);
+  padding:0;
+  height: 2.6em;
+  color: aliceblue;
+  width: 5.6em;
+  border-radius: 0.2em;
+  border: 0;
+}
+.upload {
+  background-image: url("/assets/image/createLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2.2em;
+  border: 0;
+  background-color: transparent;
+  height: 2.25em;
+  margin-left: 0;
+}
+button:active {
+  filter: brightness(50%);
 }
