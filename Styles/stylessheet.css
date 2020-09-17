@@ -10,10 +10,14 @@ iframe {
 li {
   list-style: none;
 }
+.firtsHeader {
+  position: sticky;
+  top: 0;
+}
 .navbar > ul{
   display: flex;
   height: 3.2em;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: blueviolet;
   align-items: center;
 }
@@ -24,7 +28,8 @@ button {
   padding: 1.5em;
 }
 
-button:hover {
+button:active {
+  border: transparent;
   background-color: #52525231;
 }
 
