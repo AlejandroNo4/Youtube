@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+img{
+  width: 100%;
+}
+iframe {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+.navbar > ul{ 
+  display: flex;
+  height: 3.2em;
+  justify-content: space-around;
+  background-color: blueviolet;
+  align-items: center;
+}
+
+button {
+  height: 2em;
+  width: 2em;
+  padding: 1.5em;
+}
+
+button:hover {
+  background-color: #52525231;
+}
+
+.Hamburger {
+  background-image: url("/assets/image/hamburger.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em;
+  background-color: transparent;
+  border: 0 solid #212121 ;
+  border-radius: 50%;
+}
