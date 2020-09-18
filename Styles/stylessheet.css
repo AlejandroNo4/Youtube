@@ -119,6 +119,7 @@ button:active {
   padding: 0.5em;
   font-size: 0.9em;
   color: white;
+  display: flex;
 }
 .popUp > p {
   padding: 0.5em;
