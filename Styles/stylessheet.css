@@ -141,7 +141,7 @@ button:active {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows:  33em 5fr 5fr;
+  grid-template-rows:  33em 5fr auto;
   /* height: 100em; */
   grid-template-areas:
   "video              playList"
