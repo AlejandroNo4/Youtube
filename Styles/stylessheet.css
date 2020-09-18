@@ -38,10 +38,10 @@ button {
 }
 
 .Hamburger {
-  background-image: url("/assets/image/hamburger.png");
+  background-image: url("/assets/image/hamburger.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1.5em;
+  background-size: 4em;
   background-color: transparent;
   border: 0 solid #212121;
   border-radius: 50%;
@@ -95,10 +95,10 @@ button {
   border: 0;
 }
 .upload {
-  background-image: url("/assets/image/createLogo.png");
+  background-image: url("/assets/image/createLogo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 2.2em;
+  background-size: 8em;
   border: 0;
   background-color: transparent;
   height: 2.25em;
