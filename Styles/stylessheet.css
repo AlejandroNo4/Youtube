@@ -166,10 +166,9 @@ aside > ul > * + * {
   background-color: white;
   grid-area: comments;
   padding: 0.5em;
-
 }
 .comments > div {
-  max-width: 6em;
+  max-width: 2em;
   align-items: center;
   margin: auto;
   margin-top: 6em;
@@ -182,7 +181,7 @@ aside > ul > * + * {
   grid-area: videoTile;
   padding: 1.3em;
 }
-.videoTitle > h2{
+.videoTitle > h2 {
   margin-bottom: 0.8em;
   font-weight: lighter;
 }
@@ -251,12 +250,10 @@ aside > ul > li > article > h1 {
   margin-top: 2em;
 }
 .videoTitle > div > hr {
-  margin-top: 1.0em;
+  margin-top: 1em;
 }
 .blueLine {
-  margin-left: 29em;
-  margin-right: 0;
-
+  margin-top: -0.1em;
   height: 0.25em;
   width: 13.5em;
   background-color: var(--bluecolor);
@@ -310,4 +307,10 @@ aside > ul > li > article > h1 {
 .disLikes {
   margin-top: 0.6em;
   transform: scale(-1);
+}
+.blueLineContainer {
+  justify-content: flex-end;
+}
+.grayLine {
+  background-color: yellow;
 }
