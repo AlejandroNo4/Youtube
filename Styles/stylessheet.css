@@ -23,11 +23,12 @@ iframe {
 li {
   list-style: none;
 }
+
 .navbar {
   position: sticky;
-  background-color: white;
   top: 0;
 }
+
 .navbar > ul {
   height: 3.2em;
   justify-content: space-around;
@@ -59,6 +60,9 @@ button {
   border: 0.1em solid var(--grayColorOne);
   width: 45em;
   padding-left: 0.3em;
+}
+.whiteBGColor {
+  background-color: white;
 }
 .submitbutton {
   background-image: url("/assets/image/searchLogo.png");
@@ -107,7 +111,6 @@ button:active {
 }
 .popUp {
   border: 0.2em solid var(--bluecolor);
-  background-color: white;
   height: 4em;
   flex-direction: column;
   margin-bottom: 1.1em;
@@ -141,34 +144,63 @@ button:active {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows:  33em 5fr auto;
-  /* height: 100em; */
+  grid-template-rows: 45em 1fr 1fr 1fr;
   grid-template-areas:
-  "video              playList"
-  "videoTile          playlist"
-  "videoDescription   playlist"
-  "comments           playlist"
-  ;
+    "video              playList"
+    "videoTile          playlist"
+    "videoDescription   playlist"
+    "comments           playlist";
   column-gap: 1.1em;
-  row-gap: 1.1em;;
+  row-gap: 1.1em;
 }
 aside {
-  background-color: white;
   grid-area: playList;
+  padding: 0.5em;
+  height: 98em;
+}
+aside > ul > * + * {
+  margin-top: 0.7em;
 }
 .comments {
   background-color: white;
   grid-area: comments;
+  padding: 0.5em;
 }
-.videoTitle > section {
+.videoTitle{
   background-color: white;
   grid-area: videoTile;
+  padding: 0.5em;
 }
 .videoDescription {
   background-color: white;
   grid-area: videoDescription;
+  padding: 0.5em;
 }
+
 .VideoPlayer {
   background-color: white;
   grid-area: video;
+  padding: 0.5em;
+}
+aside > ul > li > image {
+  flex: 30%;
+}
+aside > ul > li > article {
+  flex: 90%;
+  margin-left: 0.6em;
+}
+
+aside > ul > li > article > h1 {
+  margin-bottom: 1em;
+}
+
+.menu {
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.menuRight {
+  align-items: center;
+}
+.likes {
+  align-items: center;
 }
