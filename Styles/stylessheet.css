@@ -155,11 +155,12 @@ main {
 }
 aside {
   grid-area: playList;
-  padding: 0.5em;
+  
   height: 98em;
 }
 aside > ul > * + * {
   margin-top: 0.7em;
+  background-color: white;
 }
 .comments {
   background-color: white;
