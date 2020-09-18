@@ -10,6 +10,9 @@ body {
   --bluecolor: #167ac6;
   --grayColorOne: #b6b6b6;
 }
+.displayFlexbox {
+  display: flex;
+}
 img {
   width: 100%;
 }
@@ -113,12 +116,18 @@ button:active {
   height: 4em;
   display: flex;
   flex-direction: column;
+  margin-top: 0.8em;
+  margin-bottom: 1.1em;
+  position: sticky;
+  width: 100%;
 }
 .popUp > h4 {
   background-color: var(--bluecolor);
-  padding: 0.5em;
+  padding: 0.1em;
   font-size: 0.9em;
   color: white;
+  justify-content: space-between;
+  align-items: center;
 }
 .popUp > p {
   padding: 0.5em;
@@ -127,4 +136,17 @@ button:active {
 .popUp > p > a {
   text-decoration: none;
   color: var(--bluecolor);
+}
+.popUp > h4 > button {
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  padding: 0;
+  border: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
 }
