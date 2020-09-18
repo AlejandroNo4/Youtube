@@ -168,7 +168,7 @@ aside > ul > * + * {
   padding: 0.5em;
 }
 .comments > div {
-  max-width: 2em;
+  max-width: 6em;
   align-items: center;
   margin: auto;
   margin-top: 6em;
@@ -252,10 +252,13 @@ aside > ul > li > article > h1 {
 .videoTitle > div > hr {
   margin-top: 1em;
 }
+.trasparentLine {
+  flex: 99%;
+}
 .blueLine {
-  margin-top: -0.1em;
   height: 0.25em;
   width: 13.5em;
+  flex: 80%;
   background-color: var(--bluecolor);
 }
 .titleAndsubscribe {
@@ -309,8 +312,10 @@ aside > ul > li > article > h1 {
   transform: scale(-1);
 }
 .blueLineContainer {
+  margin-top: -0.2em;
   justify-content: flex-end;
 }
 .grayLine {
-  background-color: yellow;
+  background-color: rgb(165, 165, 165);
+  flex: 5%;
 }
