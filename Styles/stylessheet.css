@@ -141,16 +141,15 @@ button:active {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows:  33em 5fr 5fr;
+  grid-template-rows: 33em 5fr 5fr;
   /* height: 100em; */
   grid-template-areas:
-  "video              playList"
-  "videoTile          playlist"
-  "videoDescription   playlist"
-  "comments           playlist"
-  ;
+    "video              playList"
+    "videoTile          playlist"
+    "videoDescription   playlist"
+    "comments           playlist";
   column-gap: 1.1em;
-  row-gap: 1.1em;;
+  row-gap: 1.1em;
 }
 aside {
   background-color: white;
@@ -171,4 +170,25 @@ aside {
 .VideoPlayer {
   background-color: white;
   grid-area: video;
+}
+aside > ul > li > image {
+  flex: 35%;
+}
+aside > ul > li > article {
+  flex: 50%;
+}
+
+aside > ul > li > article > h1 {
+  margin-bottom: 2em;
+}
+
+.menu {
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.menuRight {
+  align-items: center;
+}
+.likes {
+  align-items: center;
 }
