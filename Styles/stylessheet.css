@@ -155,8 +155,8 @@ main {
 }
 aside {
   grid-area: playList;
-  
-  height: 98em;
+  padding: 0.5em;
+  height: 101em;
 }
 aside > ul > * + * {
   margin-top: 0.7em;
@@ -166,11 +166,25 @@ aside > ul > * + * {
   background-color: white;
   grid-area: comments;
   padding: 0.5em;
+
 }
-.videoTitle{
+.comments > div {
+  max-width: 6em;
+  align-items: center;
+  margin: auto;
+  margin-top: 6em;
+}
+.comments > div > p {
+  margin-left: 0.5em;
+}
+.videoTitle {
   background-color: white;
   grid-area: videoTile;
-  padding: 0.5em;
+  padding: 1.3em;
+}
+.videoTitle > h2{
+  margin-bottom: 0.8em;
+  font-weight: lighter;
 }
 .videoDescription {
   background-color: white;
@@ -179,9 +193,7 @@ aside > ul > * + * {
 }
 
 .VideoPlayer {
-  background-color: white;
   grid-area: video;
-  padding: 0.5em;
 }
 aside > ul > li > image {
   flex: 30%;
@@ -197,11 +209,105 @@ aside > ul > li > article > h1 {
 
 .menu {
   justify-content: space-between;
-  margin-top: 2em;
 }
 .menuRight {
   align-items: center;
 }
+.menuRight > button {
+  margin-left: 0.8em;
+}
 .likes {
   align-items: center;
+}
+.subscriberspart {
+  align-items: center;
+  margin-top: 0.5em;
+}
+.subscribe {
+  padding: 0 2.3em;
+  width: 8em;
+  height: 2.16em;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0.15em;
+  z-index: 2;
+}
+.subscriberspart > span {
+  margin-left: -0.3em;
+  padding: 0.4em 0.5em 0.4em 0.7em;
+  border: 0.02em solid rgb(58, 58, 58);
+  border-left: 0;
+  border-radius: 0.2em;
+  z-index: 1;
+  font-size: 0.8em;
+}
+.conteinerTitleMiddle {
+  margin: 0;
+  justify-content: space-between;
+}
+.counterViews {
+  margin-top: 2em;
+}
+.videoTitle > div > hr {
+  margin-top: 1.0em;
+}
+.blueLine {
+  margin-left: 29em;
+  margin-right: 0;
+
+  height: 0.25em;
+  width: 13.5em;
+  background-color: var(--bluecolor);
+}
+.titleAndsubscribe {
+  margin-left: 0.5em;
+}
+.userIcon {
+  flex-direction: row;
+}
+.plus {
+  background-image: url("/assets/image/PlusIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12em;
+  border: 0;
+  background-color: transparent;
+  height: 2.25em;
+  margin-left: 0;
+}
+.Share {
+  background-image: url("/assets/image/shareIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2em;
+  border: 0;
+  background-color: transparent;
+  height: 2.25em;
+  margin-left: 0;
+}
+.More {
+  background-image: url("/assets/image/dots.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6.5em;
+  border: 0;
+  background-color: transparent;
+  height: 2.25em;
+  margin-left: 0;
+}
+.Likes {
+  background-image: url("/assets/image/likeIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3.5em;
+  border: 0;
+  background-color: transparent;
+  height: 2.25em;
+  margin-left: 0;
+}
+.disLikes {
+  margin-top: 0.6em;
+  transform: scale(-1);
 }
