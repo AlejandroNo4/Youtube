@@ -156,7 +156,7 @@ main {
 aside {
   grid-area: playList;
   padding: 0.5em;
-  height: 98em;
+  height: 101em;
 }
 aside > ul > * + * {
   margin-top: 0.7em;
@@ -166,7 +166,7 @@ aside > ul > * + * {
   grid-area: comments;
   padding: 0.5em;
 }
-.videoTitle{
+.videoTitle {
   background-color: white;
   grid-area: videoTile;
   padding: 0.5em;
@@ -203,4 +203,32 @@ aside > ul > li > article > h1 {
 }
 .likes {
   align-items: center;
+}
+.subscriberspart {
+  align-items: center;
+}
+.subscribe {
+  padding: 0 2.3em;
+  width: 8em;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  z-index: 2;
+}
+.subscriberspart > span {
+  margin-left: -0.3em;
+  padding: 0.4em 0.5em 0.4em 0.7em;
+  border: 0.02em solid rgb(58, 58, 58);
+  border-left: 0;
+  border-radius: 0.2em;
+  z-index: 1;
+  font-size: 0.8em;
+}
+.conteinerTitleMiddle {
+  margin: 0;
+  justify-content: space-between;
+}
+.counterViews {
+  margin-top: 2em;
 }
