@@ -15,50 +15,34 @@ We created this project using some iframes for the video and Img tags for the im
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://kenderb.github.io/YoutubeMicroverse/?)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+## How to run it
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
 
-### Setup
+### last version of git.
 
-### Install
+### Clone this url https://github.com/AlejandroNo4/Youtube.git on your local host.
 
-### Usage
-
-### Run tests
-
-### Deployment
-
+### Web explorer browser like Google Chrome or Mozilla Firefox
 
 
 ## Authors
 
-👤 **Author1**
+👤 **AlejandroNo4**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@AlejandroNo4](https://github.com/AlejandroNo4)
+- Twitter: [@Alejand80002666](https://twitter.com/Alejand80002666)
+- LinkedIn: [Alejandro Contreras Rodriguez](https://www.linkedin.com/in/alejandro-contreras-rodriguez-b524821b5)
 
-👤 **Author2**
+👤 **KenderB**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+- GitHub: [@kenderb](https://github.com/githubhandle)
+- Twitter: [@KBTarts](https://twitter.com/KBTarts)
+- LinkedIn: [Kender Bolivar](https://www.linkedin.com/in/kender-bolivar-1736086b//)
 
 ## Show your support
 
@@ -66,9 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Yotube page
 
 ## 📝 License
 
