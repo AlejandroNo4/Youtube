@@ -6,9 +6,25 @@ body {
   background-color: #e6e6e6;
   font-family: arial;
 }
+
 :root {
   --bluecolor: #167ac6;
   --grayColorOne: #b6b6b6;
+}
+
+.whiteBGColor,
+.comments,
+aside li,
+.videoTitle,
+.videoDescription {
+  background-color: white;
+}
+
+.subscribe,
+.popUp > h4,
+.popUp button,
+.subscribe {
+  color: white;
 }
 .navbar,
 .popUp {
@@ -66,9 +82,7 @@ button {
   width: 45em;
   padding-left: 0.3em;
 }
-.whiteBGColor {
-  background-color: white;
-}
+
 .submitbutton {
   background-image: url("/assets/image/searchLogo.png");
   background-size: 1.2em;
@@ -119,7 +133,6 @@ button:active {
   background-color: var(--bluecolor);
   padding: 0.1em;
   font-size: 0.9em;
-  color: white;
   justify-content: space-between;
   align-items: center;
 }
@@ -136,7 +149,6 @@ button:active {
 
 .popUp button {
   background-color: transparent;
-  color: white;
   font-size: 1em;
   padding: 0;
 }
@@ -157,20 +169,24 @@ main {
 aside {
   grid-area: playList;
   padding: 0.5em;
-  height: 101em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  height: 93em;
 }
 aside img {
-  max-width: 10em;
-  height: 6em;
+  flex: 60%;
 }
 
-aside > ul > * + * {
-  margin-top: 0.7em;
-  background-color: white;
+aside article {
+  flex: 40%;
+}
+
+aside li {
+  align-items: center;
+  padding: 0.5em;
 }
 
 .comments {
-  background-color: white;
   grid-area: comments;
   padding: 0.5em;
 }
@@ -191,7 +207,6 @@ aside > ul > * + * {
 }
 
 .videoTitle {
-  background-color: white;
   grid-area: videoTile;
   padding: 1.3em;
 }
@@ -202,7 +217,6 @@ aside > ul > * + * {
 }
 
 .videoDescription {
-  background-color: white;
   grid-area: videoDescription;
   padding: 0.5em;
 }
@@ -246,13 +260,15 @@ aside h1 {
 }
 
 .subscribe {
-  padding: 0 2.3em;
+  background-image: url("/assets/image/youtubeLogoSubscribe.png");
+  background-position-x: 0.3em;
+  background-size: 1.8em;
+  margin-top: 0.01em;
+  padding: 0 2.5em;
   width: 8em;
   height: 2.16em;
   background-color: red;
-  color: white;
   font-weight: bold;
-  border-radius: 0.15em;
   z-index: 2;
 }
 
@@ -336,14 +352,18 @@ aside h1 {
   display: inline-block;
   border-top: 0.1em solid darkgray;
   text-align: center;
-  padding-top: 0.5em;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
   font-weight: bold;
   color: gray;
   font-size: 0.7em;
-  bottom: 0;
 }
 .actualDescription,
 .videoDescription > h3 {
   color: rgb(56, 56, 56);
   font-size: 0.9em;
+}
+.videoDescription {
+  flex-direction: column;
+  justify-content: space-between;
 }
