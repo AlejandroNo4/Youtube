@@ -4,7 +4,7 @@
 
 > This is a Youtube Clone for  an.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot_02.png)
 
 Additional description about the project and its features.
 
