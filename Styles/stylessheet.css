@@ -10,6 +10,10 @@ body {
   --bluecolor: #167ac6;
   --grayColorOne: #b6b6b6;
 }
+.navbar, 
+.popUp {
+  z-index: 50;
+}
 .displayFlexbox {
   display: flex;
 }
@@ -39,15 +43,16 @@ button {
   height: 2em;
   width: 2em;
   padding: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height: 2.25em;
+  border: 0;
 }
 
 .Hamburger {
   background-image: url("/assets/image/hamburger.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 4em;
-  background-color: transparent;
-  border: 0 solid #212121;
   border-radius: 50%;
 }
 
@@ -66,13 +71,10 @@ button {
 }
 .submitbutton {
   background-image: url("/assets/image/searchLogo.png");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 1.2em;
   background-color: #f7f7f7;
   border: 0.05em solid var(--grayColorOne);
   width: 4.8em;
-  height: 2.3em;
   padding: 0;
 }
 
@@ -94,21 +96,16 @@ button {
   color: aliceblue;
   width: 5.6em;
   border-radius: 0.2em;
-  border: 0;
 }
 .upload {
   background-image: url("/assets/image/createLogo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 8em;
-  border: 0;
-  background-color: transparent;
-  height: 2.25em;
-  margin-left: 0;
 }
+
 button:active {
   filter: brightness(88%);
 }
+
 .popUp {
   border: 0.2em solid var(--bluecolor);
   height: 4em;
@@ -117,6 +114,7 @@ button:active {
   position: sticky;
   top: 3.5em;
 }
+
 .popUp > h4 {
   background-color: var(--bluecolor);
   padding: 0.1em;
@@ -125,20 +123,22 @@ button:active {
   justify-content: space-between;
   align-items: center;
 }
+
 .popUp > p {
   padding: 0.5em;
   font-size: 0.8em;
 }
-.popUp > p > a {
+
+.popUp  a {
   text-decoration: none;
   color: var(--bluecolor);
 }
-.popUp > h4 > button {
+
+.popUp button {
   background-color: transparent;
   color: white;
   font-size: 1em;
   padding: 0;
-  border: 0;
 }
 
 main {
@@ -153,38 +153,50 @@ main {
   column-gap: 1.1em;
   row-gap: 1.1em;
 }
+
 aside {
   grid-area: playList;
   padding: 0.5em;
   height: 101em;
 }
+
 aside > ul > * + * {
   margin-top: 0.7em;
   background-color: white;
 }
+
 .comments {
   background-color: white;
   grid-area: comments;
   padding: 0.5em;
 }
+
 .comments > div {
-  max-width: 6em;
   align-items: center;
-  margin: auto;
+  justify-content: center;
   margin-top: 6em;
 }
-.comments > div > p {
+
+.comments p {
   margin-left: 0.5em;
 }
+
+.comments img {
+  height: 2em;
+  width: auto;
+}
+
 .videoTitle {
   background-color: white;
   grid-area: videoTile;
   padding: 1.3em;
 }
+
 .videoTitle > h2 {
   margin-bottom: 0.8em;
   font-weight: lighter;
 }
+
 .videoDescription {
   background-color: white;
   grid-area: videoDescription;
@@ -194,34 +206,41 @@ aside > ul > * + * {
 .VideoPlayer {
   grid-area: video;
 }
-aside > ul > li > image {
+
+aside image {
   flex: 30%;
 }
-aside > ul > li > article {
+
+aside article {
   flex: 90%;
   margin-left: 0.6em;
 }
 
-aside > ul > li > article > h1 {
+aside h1 {
   margin-bottom: 1em;
 }
 
 .menu {
   justify-content: space-between;
 }
+
 .menuRight {
   align-items: center;
 }
+
 .menuRight > button {
   margin-left: 0.8em;
 }
+
 .likes {
   align-items: center;
 }
+
 .subscriberspart {
   align-items: center;
   margin-top: 0.5em;
 }
+
 .subscribe {
   padding: 0 2.3em;
   width: 8em;
@@ -229,10 +248,10 @@ aside > ul > li > article > h1 {
   background-color: red;
   color: white;
   font-weight: bold;
-  border: 0;
   border-radius: 0.15em;
   z-index: 2;
 }
+
 .subscriberspart > span {
   margin-left: -0.3em;
   padding: 0.4em 0.5em 0.4em 0.7em;
@@ -242,71 +261,59 @@ aside > ul > li > article > h1 {
   z-index: 1;
   font-size: 0.8em;
 }
+
 .conteinerTitleMiddle {
   margin: 0;
   justify-content: space-between;
 }
+
 .counterViews {
   margin-top: 2em;
 }
+
 .videoTitle > div > hr {
   margin-top: 1em;
 }
+
 .trasparentLine {
   flex: 99%;
 }
+
 .blueLine {
   height: 0.25em;
   width: 13.5em;
   flex: 80%;
   background-color: var(--bluecolor);
 }
+
 .titleAndsubscribe {
   margin-left: 0.5em;
 }
+
 .userIcon {
   flex-direction: row;
 }
+
 .plus {
   background-image: url("/assets/image/PlusIcon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 12em;
-  border: 0;
-  background-color: transparent;
-  height: 2.25em;
-  margin-left: 0;
 }
+
 .Share {
   background-image: url("/assets/image/shareIcon.png");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 2em;
-  border: 0;
-  background-color: transparent;
-  height: 2.25em;
-  margin-left: 0;
 }
+
 .More {
   background-image: url("/assets/image/dots.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 6.5em;
-  border: 0;
-  background-color: transparent;
-  height: 2.25em;
-  margin-left: 0;
 }
+
 .Likes {
   background-image: url("/assets/image/likeIcon.png");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 3.5em;
-  border: 0;
-  background-color: transparent;
-  height: 2.25em;
-  margin-left: 0;
 }
+
 .disLikes {
   margin-top: 0.6em;
   transform: scale(-1);
