@@ -23,11 +23,11 @@ We created this project using some iframes for the video and Img tags for the im
 To get a local copy up and running follow these simple example steps.
 
 
-### last version of git.
+### If you're using latest version of git.
 
 ### Clone this url https://github.com/AlejandroNo4/Youtube.git on your local host.
 
-### Web explorer browser like Google Chrome or Mozilla Firefox
+### You have to use a Web explorer browser like Google Chrome or Mozilla Firefox to open the index.html file.
 
 
 ## Authors
