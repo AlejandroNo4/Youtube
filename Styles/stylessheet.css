@@ -10,7 +10,7 @@ body {
   --bluecolor: #167ac6;
   --grayColorOne: #b6b6b6;
 }
-.navbar, 
+.navbar,
 .popUp {
   z-index: 50;
 }
@@ -129,7 +129,7 @@ button:active {
   font-size: 0.8em;
 }
 
-.popUp  a {
+.popUp a {
   text-decoration: none;
   color: var(--bluecolor);
 }
