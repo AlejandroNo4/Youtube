@@ -144,7 +144,7 @@ button:active {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 45em 1fr 1fr 1fr;
+  grid-template-rows: 45em 1fr 10em 1fr;
   grid-template-areas:
     "video              playList"
     "videoTile          playlist"
@@ -158,6 +158,10 @@ aside {
   grid-area: playList;
   padding: 0.5em;
   height: 101em;
+}
+aside img {
+  max-width: 10em;
+  height: 6em;
 }
 
 aside > ul > * + * {
@@ -325,4 +329,21 @@ aside h1 {
 .grayLine {
   background-color: rgb(165, 165, 165);
   flex: 5%;
+}
+
+.showMore {
+  width: 100%;
+  display: inline-block;
+  border-top: 0.1em solid darkgray;
+  text-align: center;
+  padding-top: 0.5em;
+  font-weight: bold;
+  color: gray;
+  font-size: 0.7em;
+  bottom: 0;
+}
+.actualDescription,
+.videoDescription > h3 {
+  color: rgb(56, 56, 56);
+  font-size: 0.9em;
 }
