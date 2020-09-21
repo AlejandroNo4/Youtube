@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Youtube Clone
 
-> One paragraph statement about the project.
+> This is a Youtube Clone for .
 
 ![screenshot](./app_screenshot.png)
 
