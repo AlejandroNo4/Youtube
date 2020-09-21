@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: #e6e6e6;
   font-family: arial;
@@ -26,20 +27,25 @@ aside li,
 .subscribe {
   color: white;
 }
+
 .navbar,
 .popUp {
   z-index: 50;
 }
+
 .displayFlexbox {
   display: flex;
 }
+
 img {
   width: 100%;
 }
+
 iframe {
   width: 100%;
   height: 100%;
 }
+
 li {
   list-style: none;
 }
@@ -51,7 +57,9 @@ li {
 
 .navbar > ul {
   height: 3.2em;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   align-items: center;
 }
 
@@ -67,8 +75,8 @@ button {
 }
 
 .Hamburger {
-  background-image: url("/assets/image/hamburger.svg");
-  background-size: 4em;
+  background-image: url("../assets/image/hamburger.svg");
+  background-size: 3em;
   border-radius: 50%;
 }
 
@@ -84,7 +92,7 @@ button {
 }
 
 .submitbutton {
-  background-image: url("/assets/image/searchLogo.png");
+  background-image: url("../assets/image/searchLogo.png");
   background-size: 1.2em;
   background-color: #f7f7f7;
   border: 0.05em solid var(--grayColorOne);
@@ -98,10 +106,11 @@ button {
 }
 
 .UploadAndSignContainer {
-  width: 9em;
+  width: 12em;
   justify-content: space-between;
   align-items: center;
 }
+
 .SignIn {
   font-weight: bold;
   background-color: var(--bluecolor);
@@ -111,9 +120,21 @@ button {
   width: 5.6em;
   border-radius: 0.2em;
 }
+
 .upload {
-  background-image: url("/assets/image/createLogo.svg");
-  background-size: 8em;
+  background-image: url("../assets/image/createLogo.svg");
+  background-size: 5em;
+}
+
+.appIcon {
+  background-image: url("../assets/image/appLogo.svg");
+  background-size: 5em;
+}
+
+.settings {
+  background-image: url("../assets/image/dots.svg");
+  background-size: 4em;
+  transform: rotate(90deg);
 }
 
 button:active {
@@ -173,6 +194,7 @@ aside {
   margin-left: -0.5em;
   height: 93em;
 }
+
 aside img {
   flex: 60%;
 }
@@ -260,7 +282,7 @@ aside h1 {
 }
 
 .subscribe {
-  background-image: url("/assets/image/youtubeLogoSubscribe.png");
+  background-image: url("../assets/image/youtubeLogoSubscribe.png");
   background-position-x: 0.3em;
   background-size: 1.8em;
   margin-top: 0.01em;
@@ -315,22 +337,22 @@ aside h1 {
 }
 
 .plus {
-  background-image: url("/assets/image/PlusIcon.svg");
+  background-image: url("../assets/image/PlusIcon.svg");
   background-size: 12em;
 }
 
 .Share {
-  background-image: url("/assets/image/shareIcon.png");
+  background-image: url("../assets/image/shareIcon.png");
   background-size: 2em;
 }
 
 .More {
-  background-image: url("/assets/image/dots.svg");
+  background-image: url("../assets/image/dots.svg");
   background-size: 6.5em;
 }
 
 .Likes {
-  background-image: url("/assets/image/likeIcon.png");
+  background-image: url("../assets/image/likeIcon.png");
   background-size: 3.5em;
 }
 
