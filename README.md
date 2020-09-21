@@ -2,17 +2,16 @@
 
 # Youtube Clone
 
-> This is a Youtube Clone for  an.
+> This is a Youtube Clone made for an assignment of HTML/CSS.
 
 ![screenshot](./app_screenshot_02.png)
 
-Additional description about the project and its features.
+We created this project using some iframes for the video and Img tags for the images, also we used flex boxes and gird systems for positioning.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo
 
