@@ -2,7 +2,7 @@
 
 # Youtube Clone
 
-> This is a Youtube Clone for .
+> This is a Youtube Clone for  an.
 
 ![screenshot](./app_screenshot.png)
 
