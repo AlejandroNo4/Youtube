@@ -5,7 +5,7 @@
 
 body {
   background-color: #e6e6e6;
-  font-family: arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -23,14 +23,19 @@ aside li,
 
 .subscribe,
 .popUp > h4,
-.popUp button,
-.subscribe {
+.popUp button {
   color: white;
 }
 
 .navbar,
 .popUp {
   z-index: 50;
+}
+
+.actualDescription,
+.videoDescription > h3 {
+  color: rgb(56, 56, 56);
+  font-size: 0.9em;
 }
 
 .displayFlexbox {
@@ -46,10 +51,6 @@ iframe {
   height: 100%;
 }
 
-li {
-  list-style: none;
-}
-
 .navbar {
   position: sticky;
   top: 0;
@@ -61,17 +62,6 @@ li {
   margin-left: 1.5em;
   margin-right: 1.5em;
   align-items: center;
-}
-
-button {
-  height: 2em;
-  width: 2em;
-  padding: 1.5em;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  height: 2.25em;
-  border: 0;
 }
 
 .Hamburger {
@@ -137,6 +127,16 @@ button {
   transform: rotate(90deg);
 }
 
+button {
+  width: 2em;
+  padding: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height: 2.25em;
+  border: 0;
+}
+
 button:active {
   filter: brightness(88%);
 }
@@ -199,8 +199,8 @@ aside img {
   flex: 60%;
 }
 
-aside article {
-  flex: 40%;
+li {
+  list-style: none;
 }
 
 aside li {
@@ -236,11 +236,6 @@ aside li {
 .videoTitle > h2 {
   margin-bottom: 0.8em;
   font-weight: lighter;
-}
-
-.videoDescription {
-  grid-area: videoDescription;
-  padding: 0.5em;
 }
 
 .VideoPlayer {
@@ -380,12 +375,10 @@ aside h1 {
   color: gray;
   font-size: 0.7em;
 }
-.actualDescription,
-.videoDescription > h3 {
-  color: rgb(56, 56, 56);
-  font-size: 0.9em;
-}
+
 .videoDescription {
   flex-direction: column;
   justify-content: space-between;
+  grid-area: videoDescription;
+  padding: 0.5em;
 }
