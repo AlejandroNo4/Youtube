@@ -13,6 +13,20 @@ body {
   --grayColorOne: #b6b6b6;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  width: 2em;
+  padding: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height: 2.25em;
+  border: 0;
+}
+
 .whiteBGColor,
 .comments,
 aside li,
@@ -154,16 +168,6 @@ iframe {
   color: var(--bluecolor);
 }
 
-button {
-  width: 2em;
-  padding: 1.5em;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  height: 2.25em;
-  border: 0;
-}
-
 button:active {
   filter: brightness(88%);
 }
@@ -197,10 +201,6 @@ aside {
 
 aside img {
   flex: 60%;
-}
-
-li {
-  list-style: none;
 }
 
 aside li {
@@ -355,10 +355,12 @@ aside h1 {
   margin-top: 0.6em;
   transform: scale(-1);
 }
+
 .blueLineContainer {
   margin-top: -0.2em;
   justify-content: flex-end;
 }
+
 .grayLine {
   background-color: rgb(165, 165, 165);
   flex: 5%;
