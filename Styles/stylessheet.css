@@ -127,11 +127,6 @@ iframe {
   transform: rotate(90deg);
 }
 
-
-button:active {
-  filter: brightness(88%);
-}
-
 .popUp {
   border: 0.2em solid var(--bluecolor);
   height: 4em;
@@ -167,6 +162,10 @@ button {
   background-color: transparent;
   height: 2.25em;
   border: 0;
+}
+
+button:active {
+  filter: brightness(88%);
 }
 
 .popUp button {
